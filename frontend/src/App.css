@@ -12224,3 +12224,225 @@ body.light-theme .primary-btn {
 body.light-theme .greeting-text {
   color: #172033 !important;
 }
+/* ================================
+   MOBILE RESPONSIVE FIX
+   ================================ */
+
+@media (max-width: 768px) {
+
+  /* Hide desktop sidebar on mobile */
+  .sidebar {
+    display: none !important;
+  }
+
+  /* Make the main area use the FULL screen */
+  .main-wrapper {
+    margin-left: 0 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .main-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    padding: 20px 16px !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Topbar */
+  .topbar {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 0 14px !important;
+  }
+
+  .global-search {
+    max-width: 100% !important;
+    flex: 1 !important;
+  }
+
+  .global-search input {
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+
+  .profile-info {
+    display: none !important;
+  }
+
+  .profile-button {
+    padding: 4px !important;
+  }
+
+  /* Page headers */
+  .page-header {
+    width: 100% !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 14px !important;
+  }
+
+  .page-header h1 {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+    word-break: normal !important;
+  }
+
+  .page-header p {
+    max-width: 100% !important;
+  }
+
+  /* Cards and grids */
+  .dashboard-grid,
+  .stats-grid,
+  .overview-grid,
+  .analytics-grid,
+  .content-grid {
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+  }
+
+  /* Scanner */
+  .scanner-container,
+  .scanner-card,
+  .upload-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Buttons */
+  button {
+    max-width: 100%;
+  }
+
+  /* Tables */
+  .table-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+  }
+
+  /* Prevent long text from breaking the layout */
+  .card,
+  .panel,
+  .skill-card,
+  .conflict-card,
+  .report-card {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  /* Modals */
+  .topbar-modal {
+    width: calc(100% - 32px) !important;
+    max-width: calc(100% - 32px) !important;
+    max-height: 90vh !important;
+    overflow-y: auto !important;
+  }
+
+  /* Hide desktop-only search shortcut */
+  .search-shortcut {
+    display: none !important;
+  }
+}
+/* ===== FINAL MOBILE FULL WIDTH FIX ===== */
+
+@media screen and (max-width: 768px) {
+
+  html,
+  body,
+  #root {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+  }
+
+  .app-shell {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    display: block !important;
+    overflow-x: hidden !important;
+  }
+
+  .sidebar {
+    display: none !important;
+    width: 0 !important;
+  }
+
+  .main-wrapper {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .main-content {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 20px 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  .topbar {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Stop every page section from keeping desktop width */
+  .page,
+  .page-container,
+  .page-content,
+  .dashboard,
+  .scanner-page,
+  .conflicts-page,
+  .skills-page,
+  .analytics-page,
+  .network-page,
+  .reports-page {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Scanner specifically */
+  .scanner-container,
+  .scanner-card,
+  .upload-zone,
+  .upload-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Make grids one column */
+  .stats-grid,
+  .dashboard-grid,
+  .overview-grid,
+  .content-grid,
+  .analytics-grid {
+    width: 100% !important;
+    min-width: 0 !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Prevent text from creating a huge desktop width */
+  * {
+    max-width: 100%;
+  }
+}
